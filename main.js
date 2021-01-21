@@ -38,7 +38,7 @@ const pAequorFactory = (num, arr) => {
       let percent = (n/15)*100;
       console.log(`Specimen #${this.specimenNum} and specimen #${pAequorTwo.specimenNum} have ${percent}% in common.`);
     },
-    // Returns true if specimen object's dna contains at 60% 'C' or 'G' bases
+    // Returns true if specimen object's dna contains at least 60% 'C' or 'G' bases
     willLikelySurvive() {
       let count = 0;
       for (let i=0; i<15; i++) {
@@ -56,7 +56,7 @@ const pAequorFactory = (num, arr) => {
   }
 };
 
-// Return 30 instances of survivable pAequorFactory in array
+// Return 30 instances of survivable pAequor specimens in array
 const findThirty = () => {
   const survivableArr = [];
   let counter = 1;
@@ -69,6 +69,11 @@ const findThirty = () => {
   }
   return survivableArr;
 }
+
+// Test function: findThirty()
+const survivableSpecimens = findThirty();
+console.log(survivableSpecimens);
+// Should print 30 specimen objects that meet criteria for survivability
 
 // Test function: pAequorFactory()
 // console.log(pAequorFactory(1, mockUpStrand())); 
@@ -95,7 +100,3 @@ const findThirty = () => {
 // console.log(specimen1.willLikelySurvive());
 // console.log(specimen2.willLikelySurvive());
 // Both should return true.
-
-// Test function: findThirty()
-const survivableSpecimens = findThirty();
-console.log(survivableSpecimens);
