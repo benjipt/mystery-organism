@@ -15,4 +15,4 @@ Context: You’re part of a research team that has found a new mysterious organi
 Project is created with Javascript (ES2016)
 
 ## Project status
-**Successfully Completed**
+Complete
