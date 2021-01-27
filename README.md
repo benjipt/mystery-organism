@@ -12,7 +12,8 @@ Context: You’re part of a research team that has found a new mysterious organi
 
 
 ## Technologies
-Project is created with Javascript (ES2016)
+Javascript (ES2020)
+Node.js
 
 ## Project status
 Complete
